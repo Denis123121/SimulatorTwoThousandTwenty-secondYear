@@ -8,54 +8,56 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <script src="entities.js" defer></script>
+    <script src="interface.js" defer></script>
 </head>
 <body>
-    <div>
-        <h2>Ваш счет</h2>
-        <table>
-            <tbody>
-            <tr>
-                <td>Платиновые монеты:</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Золотые монеты:</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Серебряные монеты:</td>
-                <td>1000</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div>
-        <h2>Вычесть или добавить валюту</h2>
-        <input type="number" id="number-of-coins" placeholder="Введите кол-во монет"/>
-        <p>Выберите валюту, количество которой хотите изменить</p>
-        <select id="type-of-currency">
-            <option>Платиновые монеты</option>
-            <option>Золотые монеты</option>
-            <option>Серебряные монеты</option>
-        </select>
-        <button>Сохранить</button>
-    </div>
-    <div>
-        <h2>Конвертировать валюту</h2>
-        <p>Выберите валюту, которую хотите конвертировать</p>
-        <select>
-            <option>Платиновые монеты</option>
-            <option>Золотые монеты</option>
-            <option>Серебряные монеты</option>
-        </select>
-        <p>Выберите валюту, в которую хотите конвертировать</p>
-        <select>
-            <option>Платиновые монеты</option>
-            <option>Золотые монеты</option>
-            <option>Серебряные монеты</option>
-        </select>
-        <button>Сохранить</button>
-    </div>
+<div>
+    <h2>Ваш счет</h2>
+    <table>
+        <tbody>
+        <tr>
+            <td>Платиновые монеты:</td>
+            <td id="platinum-coins-field">1</td>
+        </tr>
+        <tr>
+            <td>Золотые монеты:</td>
+            <td id="gold-coins-field">10</td>
+        </tr>
+        <tr>
+            <td>Серебряные монеты:</td>
+            <td id="silver-coins-field">1000</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <h2>Вычесть или добавить валюту</h2>
+    <input type="number" id="number-of-coins-field" placeholder="Введите кол-во монет"/>
+    <p>Выберите валюту, количество которой хотите изменить</p>
+    <select id="type-of-currency-field">
+        <option value="platinumCoins">Платиновые монеты</option>
+        <option value="goldCoins">Золотые монеты</option>
+        <option value="silverCoins">Серебряные монеты</option>
+    </select>
+    <button onclick="buttonChangeCoins_Click()">Сохранить</button>
+</div>
+<div>
+    <h2>Конвертировать валюту</h2>
+    <p>Выберите валюту, которую хотите конвертировать</p>
+    <select>
+        <option>Платиновые монеты</option>
+        <option>Золотые монеты</option>
+        <option>Серебряные монеты</option>
+    </select>
+    <p>Выберите валюту, в которую хотите конвертировать</p>
+    <select>
+        <option>Платиновые монеты</option>
+        <option>Золотые монеты</option>
+        <option>Серебряные монеты</option>
+    </select>
+    <button>Сохранить</button>
+</div>
 </body>
 </html>
